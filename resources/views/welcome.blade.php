@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    Hostname {{ gethostname() }}
+                    {{ gethostname() }} on {{ Request::ip() }}
                 </div>
             </div>
         </div>
