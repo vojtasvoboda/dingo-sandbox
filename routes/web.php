@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $imageCache = Request::getScheme() . '://' . Request::getHost() . ':8010';
+
+    return view('welcome')->with([
+        'imagecache' => $imageCache,
+    ]);
 });

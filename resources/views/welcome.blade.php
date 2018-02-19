@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <?php $logo = 'https://d3oypxn00j2a10.cloudfront.net/0.15.4/img/homepage/docker-whale-home-logo.png'; ?>
+                    <img src="{{ $imagecache }}/upload/w_300/{{ $logo  }}" alt="Docker logo" />
                 </div>
 
                 <div class="links">
